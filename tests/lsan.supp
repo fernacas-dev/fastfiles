@@ -1,0 +1,15 @@
+# LeakSanitizer suppressions for FastFiles tests.
+#
+# SDL_Init() pulls in video/dbus/drm one-time singletons that SDL_Quit()
+# never frees (upstream behavior, not our allocations). Our own code has
+# zero frames in those stacks; keep this file limited to third-party libs
+# so real leaks in src/ still fail the tests.
+#
+# Wired via LSAN_OPTIONS in CMakeLists.txt (ctest). For manual runs:
+#   LSAN_OPTIONS=suppressions=$PWD/tests/lsan.supp ./build-san/test_app
+leak:libSDL3
+leak:libdbus
+leak:libdrm
+leak:drmGetDevices2
+leak:dbus_bus_register
+leak:_dbus_message_loader_queue_messages

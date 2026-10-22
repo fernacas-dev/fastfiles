@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=FastFiles
+Comment=Minimalist Linux file explorer
+Exec=fastfiles %U
+Icon=system-file-manager
+Type=Application
+Categories=System;FileManager;Utility;
+Keywords=file;manager;browser;explorer;
+StartupNotify=true
+Terminal=false
