@@ -120,8 +120,13 @@ Design notes:
 
 ## Screenshots
 
-> TODO: add screenshots/GIF for portfolio.
-> Suggested: `docs/screenshot-grid.png`, `docs/demo.gif` (browse + rename + search, <30s).
+<!-- Uncomment once the files exist in docs/ (see docs/CAPTURE-GUIDE.md):
+![FastFiles grid view](docs/screenshot-grid.png)
+![FastFiles search](docs/screenshot-search.png)
+![FastFiles demo](docs/demo.gif)
+-->
+
+> Screenshots pending — see `docs/CAPTURE-GUIDE.md` for the 5-min capture recipe (`docs/screenshot-grid.png`, `docs/demo.gif`).
 
 ## Roadmap (V2 ideas, out of scope for V1)
 
